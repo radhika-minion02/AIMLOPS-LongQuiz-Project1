@@ -13,8 +13,8 @@ jobs:
 
     steps:
       - name: Pull Docker Image
-        run: sudo docker pull srivastavajaideep/bikeshare-fastapi:latest
+        run: sudo docker pull radhikaminion02/bikeshare-fastapi:latest
       - name: Delete Old Docker Container
         run: sudo docker rm -f bikeshare-fastapi-container || true
       - name: Run Docker Container
-        run: sudo docker run -d -p 8080:8001 --name bikeshare-fastapi-container srivastavajaideep/bikeshare-fastapi
+        run: sudo docker run -d -p 8080:8001 --name bikeshare-fastapi-container radhikaminion02/bikeshare-fastapi
